@@ -13,7 +13,7 @@ type User = {
   password: string;
 };
 type PasswordOmitUser = Omit<User, 'password'>;
-interface JWTPayload {
+interface JwtPayload {
   userId: User['id'];
   username: User['name'];
 }
